@@ -15,6 +15,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/testpage', function () {
-    return view('testpage');
-});
+// Route::get('/testpage', function () {
+//     return view('testpage');
+// });
+
+
+Route::resource('/testpage', 'JobsController');
